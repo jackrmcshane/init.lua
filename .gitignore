@@ -1,0 +1,17 @@
+
+
+plugged
+plugged/*
+
+sessions
+sessions/*
+
+env
+env/*
+
+tags
+
+plugin
+plugin/*
+
+Session.vim
