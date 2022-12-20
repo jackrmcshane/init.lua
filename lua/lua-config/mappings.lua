@@ -13,6 +13,10 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "zj", "zjzz")
+vim.keymap.set("n", "zk", "zkzz")
+vim.keymap.set("n", "zo", "zozz")
+vim.keymap.set("n", "zc", "zCzz")
 
 -- allows for preserving copied register
 vim.keymap.set("x", "<leader>p", "\"_dP")
