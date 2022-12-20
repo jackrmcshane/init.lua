@@ -1,3 +1,5 @@
+local opts = { noremap = true, silent = true }
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- somehow the second mapping he gives is throwing an error for me
 
@@ -37,3 +39,15 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- global search and replace for the word you are on
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
+
+
+-- dont know if this block is necessary
+-- better tabbing
+vim.api.nvim_set_keymap("v", "<", "<gv", opts)
+vim.api.nvim_set_keymap("v", ">", ">gv", opts)
+
+-- better window navigation
+vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", opts)
+vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", opts)
+vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", opts)
+vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", opts)
