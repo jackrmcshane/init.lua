@@ -3,7 +3,10 @@ require('lua-config')
 
 -- all code below sources vim files from 'vim' dir
 local vim_files = {
+    'mappings.vim',
+    'autocommands.vim',
     'wilder.vim',
+    'asyncrun.vim',
 }
 
 
