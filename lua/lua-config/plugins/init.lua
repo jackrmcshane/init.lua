@@ -1,0 +1,6 @@
+require('lua-config.plugins.fugitive')
+require('lua-config.plugins.harpoon')
+require('lua-config.plugins.lsp')
+require('lua-config.plugins.telescope')
+require('lua-config.plugins.treesitter')
+require('lua-config.plugins.undotree')
