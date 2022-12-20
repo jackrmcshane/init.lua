@@ -11,6 +11,18 @@ end
 local use = require('packer').use
 require('packer').startup( function()
 
+    -- Asynchronous command execution
+    use { "skywind3000/asyncrun.vim", opt = true, cmd = { "AsyncRun" } }
+
+    -- does not seem to be working
+    -- The missing auto-completion for cmdline!
+    use { "gelguy/wilder.nvim", opt = true, setup = [[vim.cmd('packadd wilder.nvim')]] }
+
+    -- Show git change (change, delete, add) signs in vim sign column
+    use { "lewis6991/gitsigns.nvim", config = [[require('lua-config.plugins.gitsigns')]] }
+
+
+
     -- require packer package manager
     use { "wbthomason/packer.nvim" }
     -- fuzzy finder
@@ -28,6 +40,7 @@ require('packer').startup( function()
 
     use ('tpope/vim-fugitive')
 
+    -- lsp & cmp setup # iss verry nice
     use {'VonHeikemen/lsp-zero.nvim',
     requires = {
 	    -- LSP Support
