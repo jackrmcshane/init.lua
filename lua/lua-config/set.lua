@@ -36,7 +36,7 @@ opt.updatetime = 50
 opt.colorcolumn = "80"
 
 -- folding
-opt.foldenable = true
+opt.foldenable = true -- use 'zi' to invert this setting while editing
 opt.foldminlines = 4
 opt.foldnestmax = 10
 opt.foldmethod = 'expr'
