@@ -7,6 +7,7 @@ local vim_files = {
     'autocommands.vim',
     'wilder.vim',
     'asyncrun.vim',
+    'markdown.vim',
 }
 
 
@@ -15,3 +16,6 @@ for _, fname in ipairs(vim_files) do
     local source_cmd = "source" .. path
     vim.cmd(source_cmd)
 end
+
+
+vim.cmd('colorscheme gruvbox')

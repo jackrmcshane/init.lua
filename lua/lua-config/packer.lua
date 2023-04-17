@@ -11,6 +11,13 @@ end
 local use = require('packer').use
 require('packer').startup( function()
 
+    -- use { 'jiangmiao/auto-pairs' }
+
+    -- markdown functionality
+    use { 'iamcco/markdown-preview.nvim', run = function() vim.fn['mkdp#util#install']() end }
+    use { 'junegunn/goyo.vim' }
+    use { 'junegunn/limelight.vim' }
+
     -- Asynchronous command execution
     use { "skywind3000/asyncrun.vim", opt = true, cmd = { "AsyncRun" } }
 
@@ -29,7 +36,9 @@ require('packer').startup( function()
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = {{'nvim-lua/plenary.nvim'}} }
 
     -- colorscheme
-    use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end })
+    -- use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end })
+    -- gruvbox
+    use { 'morhetz/gruvbox', config = function() vim.cmd('colorscheme gruvbox') end }
 
 
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

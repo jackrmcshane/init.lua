@@ -4,4 +4,4 @@ function ColorMyPencils(color)
 end
 
 
-ColorMyPencils() -- have to actually call the function
+-- ColorMyPencils("gruvbox") -- have to actually call the function
